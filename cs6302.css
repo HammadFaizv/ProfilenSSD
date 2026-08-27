@@ -1,0 +1,82 @@
+:root {
+  --p:  #6a2c91;
+  --p2: #b5179e;
+  --a:  #0077b6;
+  --a2: #00b4d8;
+  --ink:#2b2b3a;
+  --line:#ffd6a5;
+}
+
+body {
+  font-family: Quicksand, sans-serif;
+  color: var(--ink);
+  background: linear-gradient(135deg, #fdf4ff, #eef6ff 55%, #f2fff7);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+:target { scroll-margin-top: 14px; }
+
+h1 {
+  text-align: center;
+  font-size: 2.1rem;
+  letter-spacing: .5px;
+  background: linear-gradient(90deg, var(--p), var(--p2), var(--a));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h3 { text-align: center; color: var(--a); margin: .2em 0; }
+
+a  { color: var(--p2); text-decoration: none; font-weight: 600; }
+a:hover { color: var(--a); text-decoration: underline; }
+
+hr {
+  border: 0;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--p), var(--p2), var(--a2));
+}
+
+/* Section labels: About, Course Policy, Lecture Schedule, Staff … */
+b[id] {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 1.05rem;
+  background: linear-gradient(90deg, var(--p), var(--a));
+}
+
+/* Schedule / Lab / Exam tables */
+table.tg {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(106, 44, 145, .15);
+}
+
+table.tg th {
+  background: linear-gradient(90deg, var(--p), var(--p2));
+  color: #fff;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, .25);
+}
+
+table.tg td {
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+}
+
+table.tg tbody tr:nth-child(odd)  { background: #fdf0ff; }
+table.tg tbody tr:nth-child(even) { background: #ffffff; }
+table.tg tbody tr:hover           { background: #e2f7ff; }
+
+table[border="1"]:not(.tg) th { background: var(--a); color: #fff; padding: 6px 12px; }
+table[border="1"]:not(.tg) td { padding: 6px 12px; }
+
+.light-text-row { color: #adadad; }
